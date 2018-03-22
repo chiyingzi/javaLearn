@@ -13,6 +13,7 @@ public class ThreadTest extends Thread {
 
     public static void main(String[] args) {
         try {
+            System.out.println(System.currentTimeMillis());
             ThreadTest thread = new ThreadTest();
             System.out.println("线程start: " + dateFormat.format(new Date()));
             thread.start();
